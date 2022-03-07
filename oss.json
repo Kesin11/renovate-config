@@ -16,13 +16,6 @@
       "extends": [
         ":automergeMajor"
       ]
-    },
-    {
-      "depTypeList": ["dependencies"],
-      "separateMajorMinor": false,
-      "extends": [
-        ":automergeMajor"
-      ]
     }
   ]
 }
