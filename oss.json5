@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "config:base",
+    ":label(renovate)",
+    ":timezone(Asia/Tokyo)",
+    ":unpublishSafe",
+    ":enableVulnerabilityAlerts",
+    ":semanticCommitTypeAll(chore)",
+    "group:definitelyTyped",
+    "group:jsTest"
+  ],
+  "packageRules": [
+    {
+      "depTypeList": ["devDependencies"],
+      "separateMajorMinor": false,
+      "extends": [
+        ":automergeMajor"
+      ]
+    },
+    {
+      "depTypeList": ["dependencies"],
+      "separateMajorMinor": false,
+      "extends": [
+        ":automergeMajor"
+      ]
+    }
+  ]
+}
