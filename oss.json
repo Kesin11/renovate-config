@@ -17,5 +17,16 @@
         ":automergeMajor"
       ]
     }
+  ],
+  "packageRules": [
+    {
+      "groupName": "Auto merge major github-actions",
+      "matchDepTypes": [
+        "action"
+      ],
+      "extends": [
+        ":automergeMajor"
+      ]
+    }
   ]
 }
