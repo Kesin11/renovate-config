@@ -12,18 +12,16 @@
   ],
   "packageRules": [
     {
-      "depTypeList": ["devDependencies"],
+      "matchDepTypes": ["devDependencies"],
       "separateMajorMinor": false,
       "extends": [
         ":automergeMajor"
       ]
-    }
-  ],
-  "packageRules": [
+    },
     {
       "groupName": "Auto merge major github-actions",
-      "matchDepTypes": [
-        "action"
+      "matchManagers": [
+        "github-actions"
       ],
       "extends": [
         ":automergeMajor"
