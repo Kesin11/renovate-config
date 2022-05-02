@@ -10,7 +10,6 @@
     "group:jsTest",
     ":automergeMinor"
   ],
-  "stabilityDays": 2,
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
