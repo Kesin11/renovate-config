@@ -10,6 +10,9 @@
     "group:jsTest",
     ":automergeMinor"
   ],
+  "dockerfile": {
+    "fileMatch": ["(^|/)Earthfile[^/]*$"]
+  },
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
