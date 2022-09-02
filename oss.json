@@ -8,7 +8,8 @@
     ":semanticCommitTypeAll(chore)",
     "group:definitelyTyped",
     "group:jsTest",
-    ":automergeMinor"
+    ":automergeMinor",
+    ":prNotPending"
   ],
   "dockerfile": {
     "fileMatch": ["(^|/)Earthfile[^/]*$"]
