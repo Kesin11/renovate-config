@@ -9,7 +9,8 @@
     "group:definitelyTyped",
     "group:jsTest",
     ":automergeMinor",
-    ":prNotPending"
+    ":prNotPending",
+    ":prHourlyLimit4"
   ],
   "dockerfile": {
     "fileMatch": ["(^|/)Earthfile[^/]*$"]
