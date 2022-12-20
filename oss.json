@@ -17,6 +17,12 @@
   },
   "packageRules": [
     {
+      "matchPackageNames": ["node"],
+      "extends": [
+        ":separateMultipleMajorReleases"
+      ]
+    },
+    {
       "matchDepTypes": ["devDependencies"],
       "separateMajorMinor": false,
       "extends": [
