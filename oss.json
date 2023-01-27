@@ -15,6 +15,7 @@
   "dockerfile": {
     "fileMatch": ["(^|/)Earthfile[^/]*$"]
   },
+  "postUpdateOptions": ["npmDedupe"],
   "packageRules": [
     {
       "matchPackageNames": ["node"],
