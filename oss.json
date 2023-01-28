@@ -10,12 +10,14 @@
     "group:jsTest",
     ":automergeMinor",
     ":prNotPending",
-    ":prHourlyLimit4"
+    ":prHourlyLimit4",
+    ":pinSkipCi",
   ],
   "dockerfile": {
     "fileMatch": ["(^|/)Earthfile[^/]*$"]
   },
   "postUpdateOptions": ["npmDedupe"],
+  "rangeStrategy": "bump",
   "packageRules": [
     {
       "matchPackageNames": ["node"],
