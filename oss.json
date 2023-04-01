@@ -9,7 +9,6 @@
     "group:definitelyTyped",
     "group:jsTest",
     ":automergeMinor",
-    ":prNotPending",
     ":prHourlyLimit4",
     ":pinSkipCi",
   ],
