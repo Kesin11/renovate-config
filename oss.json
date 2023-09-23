@@ -31,7 +31,8 @@
     {
       "matchPackageNames": ["node"],
       "extends": [
-        ":separateMultipleMajorReleases"
+        ":separateMultipleMajorReleases",
+        ":approveMajorUpdates"
       ]
     },
     {
