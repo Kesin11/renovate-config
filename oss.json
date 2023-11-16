@@ -10,7 +10,7 @@
     "group:jsTest",
     ":automergeMinor",
     ":prHourlyLimit4",
-    ":pinSkipCi",
+    ":pinSkipCi"
   ],
   "dockerfile": {
     "fileMatch": ["(^|/)Earthfile[^/]*$"]
