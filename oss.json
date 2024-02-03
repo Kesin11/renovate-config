@@ -50,6 +50,15 @@
       "extends": [
         ":automergeMajor"
       ]
+    },
+    {
+      "groupName": "All hono packages.",
+      "matchPackageNames": [
+        "hono"
+      ],
+      "matchPackagePrefixes": [
+        "@hono/"
+      ]
     }
   ]
 }
