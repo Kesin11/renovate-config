@@ -12,6 +12,7 @@
     ":prHourlyLimit4",
     ":pinSkipCi"
   ],
+  "configMigration": true,
   "dockerfile": {
     "fileMatch": ["(^|/)Earthfile[^/]*$"]
   },
