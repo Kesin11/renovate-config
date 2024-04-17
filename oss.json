@@ -32,7 +32,12 @@
     {
       "matchPackageNames": ["node"],
       "extends": [
-        ":separateMultipleMajorReleases",
+        ":separateMultipleMajorReleases"
+      ]
+    },
+    {
+      "matchPackageNames": ["node"],
+      "extends": [
         ":approveMajorUpdates"
       ]
     },

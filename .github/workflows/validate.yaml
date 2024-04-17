@@ -1,0 +1,14 @@
+name: Validate config
+
+on:
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: renovate-config-validator
+        run: npx --yes --package renovate -- renovate-config-validator *.json
