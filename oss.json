@@ -1,9 +1,9 @@
 {
-  "extends": [
-    "config:base",
+    "extends": [
+    "config:recommended",
     ":label(renovate)",
     ":timezone(Asia/Tokyo)",
-    ":unpublishSafe",
+    "npm:unpublishSafe",
     ":enableVulnerabilityAlerts",
     ":semanticCommitTypeAll(chore)",
     "group:definitelyTyped",
@@ -18,8 +18,10 @@
   },
   "postUpdateOptions": ["npmDedupe"],
   "rangeStrategy": "bump",
-  "regexManagers": [
+  "platformAutomerge": false,
+  "customManagers": [
     {
+      "customType": "regex",
       "fileMatch": ["^(Docker|Earth)file.*$"],
       "matchStrings": [
         "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s(ENV|ARG) .*?_VERSION=(?<currentValue>.*)\\s"
@@ -31,40 +33,26 @@
   "packageRules": [
     {
       "matchPackageNames": ["node"],
-      "extends": [
-        ":separateMultipleMajorReleases"
-      ]
+      "extends": [":separateMultipleMajorReleases"]
     },
     {
       "matchPackageNames": ["node"],
-      "extends": [
-        ":approveMajorUpdates"
-      ]
+      "extends": [":approveMajorUpdates"]
     },
     {
       "matchDepTypes": ["devDependencies"],
       "separateMajorMinor": false,
-      "extends": [
-        ":automergeMajor"
-      ]
+      "extends": [":automergeMajor"]
     },
     {
       "groupName": "Auto merge major github-actions",
-      "matchManagers": [
-        "github-actions"
-      ],
-      "extends": [
-        ":automergeMajor"
-      ]
+      "matchManagers": ["github-actions"],
+      "extends": [":automergeMajor"]
     },
     {
       "groupName": "All hono packages.",
-      "matchPackageNames": [
-        "hono"
-      ],
-      "matchPackagePrefixes": [
-        "@hono/"
-      ]
+      "matchPackageNames": ["hono"],
+      "matchPackagePrefixes": ["@hono/"]
     }
   ]
 }

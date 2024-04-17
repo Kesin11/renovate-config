@@ -1,6 +1,7 @@
 {
   "customManagers": [
     {
+      "customType": "regex",
       "fileMatch": ["\\.tsx?$"],
       "matchStrings": [
         "(?:im|ex)port(?:.|\\s)+?from\\s*['\"](?<depName>https://deno.land/.+?)@v?(?<currentValue>[\\.\\d]+).*?['\"]",
@@ -9,6 +10,7 @@
       "datasourceTemplate": "deno"
     },
     {
+      "customType": "regex",
       "fileMatch": ["\\.tsx?$"],
       "matchStrings": [
         "(?:im|ex)port(?:.|\\s)+?from\\s*['\"]npm:(?<depName>.+?)@.*?(?<currentValue>[\\.\\d]+).*?['\"]",
