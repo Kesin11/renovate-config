@@ -19,6 +19,7 @@
   "postUpdateOptions": ["npmDedupe"],
   "rangeStrategy": "bump",
   "platformAutomerge": false,
+  "minimumReleaseAge": "3 days",
   "customManagers": [
     {
       "customType": "regex",
