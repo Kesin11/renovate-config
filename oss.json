@@ -54,6 +54,11 @@
       "groupName": "All hono packages.",
       "matchPackageNames": ["hono"],
       "matchPackagePrefixes": ["@hono/"]
+    },
+    {
+      "groupName": "@biomejs/biome and biome.json schema version",
+      "matchPackageNames": ["@biomejs/biome"],
+      "extends": ["customManagers:biomeVersions"]
     }
   ]
 }
