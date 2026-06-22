@@ -49,7 +49,9 @@
     {
       "groupName": "Auto merge major github-actions",
       "matchManagers": ["github-actions"],
-      "extends": [":automergeMajor"]
+      "extends": [":automergeMajor"],
+      "minimumReleaseAge": "1 day",
+      "prCreation": "not-pending"
     },
     {
       "groupName": "All hono packages.",
